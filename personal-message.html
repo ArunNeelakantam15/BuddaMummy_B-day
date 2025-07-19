@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dada's Personal Birthday Message</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="personal-message-page">
+    <!-- Global Birthday Music Continuation -->
+    <audio id="globalBirthdayMusic" loop>
+        <source src="assets/audio/birthday-dance-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Chinnamma's Background Image -->
+    <div class="background-image-overlay"></div>
+    
+    <div class="personal-message-container">
+        <div class="message-header">
+            <h1 class="dancing-script">From Dada's Heart to Yours 💜</h1>
+            
+            <!-- Music Controls -->
+            <div class="birthday-music-controls">
+                <button onclick="toggleGlobalBirthdayMusic()" id="globalMusicToggle" class="music-control-btn">
+                    🎵 Play Birthday Music
+                </button>
+            </div>
+        </div>
+        
+        <div class="transparent-message-box">
+            <div class="message-content">
+                <textarea id="personalMessageText" placeholder="Write your personal birthday message here, Dada..." rows="15">
+My Dearest Chinnamma,
+
+On this very special day, I want you to know that you are the most precious gift life has ever given me. Your laughter is the melody that fills my days with joy, your smile is the sunshine that brightens even my darkest moments.
+
+Every day with you is a celebration, but today is extra special because it marks another year of your beautiful existence in this world. You have grown into such an amazing person, and I am so proud to be your Dada.
+
+I promise to always be here for you, to support your dreams, to celebrate your victories, and to hold you close during difficult times. You are not just my daughter; you are my heart walking around outside my body.
+
+Happy Birthday, my angel. May this new year of your life be filled with endless happiness, beautiful memories, and all the love your heart can hold.
+
+All my love, forever and always,
+Dada 💜
+
+P.S. - Remember, you are loved more than words can express!
+                </textarea>
+                
+                <div class="message-actions">
+                    <button onclick="savePersonalMessage()" class="save-message-btn">
+                        💾 Save This Message
+                    </button>
+                    <button onclick="restartJourney()" class="back-btn">
+                        🔄 Start the journey again
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="floating-hearts-container"></div>
+        <div class="sparkling-effects"></div>
+    </div>
+    
+    <!-- Intensive Heart & Sparkle Rain -->
+    <div class="intensive-hearts-rain" id="intensiveHeartsRain"></div>
+    <div class="intensive-sparkles-rain" id="intensiveSparklesRain"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

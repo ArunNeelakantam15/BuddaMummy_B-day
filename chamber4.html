@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories & Personal Birthday Message</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="chamber-page memories">
+    <!-- Global Birthday Music Continuation -->
+    <audio id="globalBirthdayMusic" loop>
+        <source src="assets/audio/birthday-dance-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="memories-container">
+        <div class="memories-header">
+            <h1 class="dancing-script">Our Beautiful Memories 📸</h1>
+            
+            <!-- Music Controls -->
+            <div class="birthday-music-controls">
+                <button onclick="toggleGlobalBirthdayMusic()" id="globalMusicToggle" class="music-control-btn">
+                    🎵 Play Birthday Music
+                </button>
+            </div>
+        </div>
+        
+        <div class="memory-wall">
+            <h2>Our Memory Wall</h2>
+            <div class="photo-grid" id="photoGrid">
+                <!-- Photos will be populated by JavaScript -->
+            </div>
+        </div>
+        
+        <div class="dada-wish-section">
+            <div class="wish-container">
+                <h2 class="dancing-script">Dada's Birthday Wish for You</h2>
+                <div class="wish-background">
+                    <div class="wish-text">
+                        <p>
+                            My dearest Chinnamma, on this special day, I wish for you all the happiness in the world. 
+                            May your days be filled with laughter, your heart with joy, and your life with endless love. 
+                            You are not just my daughter, you are my heartbeat, my sunshine, my everything. 
+                            May you always remember how deeply you are loved, how precious you are to me, 
+                            and how your smile lights up my entire world. Happy Birthday, my beautiful soul! 💜
+                        </p>
+                    </div>
+                    <div class="floating-stars"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="time-capsule">
+            <h3>Time Capsule</h3>
+            <p>Write a message to your future self or to Dada:</p>
+            <textarea id="timeCapsuleMessage" placeholder="Dear Future Me / Dear Dada..."></textarea>
+            <button onclick="saveTimeCapsule()">Save in Time Capsule 🕰️</button>
+        </div>
+        
+        <!-- Personal Message Button -->
+        <div class="personal-message-section">
+            <button onclick="openPersonalMessage()" class="personal-message-btn">
+                💜 View Dada's Personal Birthday Message 💜
+            </button>
+        </div>
+        
+        <div class="final-message">
+            <h2 class="dancing-script">Thank you for this magical journey! 💜</h2>
+            <p>This website will always be here, holding our love, memories, and this special birthday celebration.</p>
+            <button onclick="restartJourney()">Experience Again 🔄</button>
+        </div>
+    </div>
+    
+    <div class="continuous-hearts-rain" id="heartsRain"></div>
+    <div class="continuous-sparkles-rain" id="sparklesRain"></div>
+    <div class="fireflies"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

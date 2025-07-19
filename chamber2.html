@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B'day Room - Chat with Dada</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="chamber-page">
+    <!-- Global Birthday Music - NO AUTOPLAY -->
+    <audio id="globalBirthdayMusic" loop>
+        <source src="assets/audio/birthday-dance-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2 class="dancing-script">💜 Dada & Fafa Chat 💜</h2>
+            <div class="love-meter">
+                <span>Dada's Love: </span>
+                <div class="meter-bar">
+                    <div class="meter-fill" id="loveMeter">100000000% 💖</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <!-- Messages will be populated by JavaScript -->
+        </div>
+        
+        <div class="chamber-navigation">
+            <div class="next-chamber-section" id="nextChamberSection" style="display: none;">
+                <div class="dance-invitation">
+                    <h3 class="dancing-script">🎵 Let's dance and cut the cake together! 🎂</h3>
+                    <div class="dance-animation">
+                        <span class="dance-emoji">💃</span>
+                        <span class="dance-emoji">🕺</span>
+                    </div>
+                    
+                    <div class="birthday-music-controls">
+                        <button onclick="toggleGlobalBirthdayMusic()" id="globalMusicToggle" class="music-control-btn">
+                            🎵 Play Birthday Music
+                        </button>
+                        <p class="music-info">🎶 Music will continue through all celebration pages! 🎶</p>
+                    </div>
+                </div>
+                
+                <div class="memory-question">
+                    <h4>Before we dance, tell me:</h4>
+                    <p class="question-text">"What's your favorite memory with Dada?"</p>
+                    <textarea id="memoryAnswer" placeholder="Share your heart..." rows="4"></textarea>
+                    <button class="continue-button" onclick="proceedToChamber3()">
+                        Continue to Cake Cutting! 🎂
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="continuous-hearts-rain" id="heartsRain"></div>
+    <div class="continuous-sparkles-rain" id="sparklesRain"></div>
+    <div class="floating-bubbles"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
