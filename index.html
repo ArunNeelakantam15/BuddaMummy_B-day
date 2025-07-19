@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversation Between Two Souls</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="intro-page">
+    <div class="intro-container">
+        <div class="heart-beat-container">
+            <div class="heartbeat-line"></div>
+            <div class="glowing-heart" id="introHeart">💜</div>
+        </div>
+        
+        <div class="intro-text">
+            <h1 class="dancing-script">This is not just a website...</h1>
+            <p class="subtitle">it's a journey between two Souls</p>
+            <div class="souls-names">
+                <span class="soul-name">Dada</span>
+                <span class="heart-divider">💜</span>
+                <span class="soul-name">Fafa</span>
+            </div>
+        </div>
+        
+        <div class="tap-instruction">
+            <p>Tap anywhere to enter the first chamber</p>
+        </div>
+    </div>
+    
+    <div class="continuous-hearts-rain" id="heartsRain"></div>
+    <div class="continuous-sparkles-rain" id="sparklesRain"></div>
+    
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('click', function() {
+            window.location.href = 'chamber1.html';
+        });
+    </script>
+</body>
+</html>

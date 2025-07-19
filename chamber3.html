@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Cutting Celebration</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="chamber-page celebration">
+    <div class="celebration-container">
+        <div class="celebration-header">
+            <h1 class="dancing-script">🎂 Cake Cutting Time! 🎂</h1>
+        </div>
+        
+        <!-- All Celebration Effects Containers -->
+        <div class="celebration-effects">
+            <div class="confetti-container" id="confettiContainer"></div>
+            <div class="balloons-container" id="balloonsContainer"></div>
+            <div class="ribbons-container" id="ribbonsContainer"></div>
+            <div class="fireworks-container" id="fireworksContainer"></div>
+            <div class="love-symbols-rain" id="loveSymbolsRain"></div>
+        </div>
+        
+        <div class="cake-section">
+            <div class="cake-container">
+                <div class="birthday-cake" id="cake">
+                    <div class="cake-base"></div>
+                    <div class="cake-middle"></div>
+                    <div class="candles">
+                        <div class="candle" id="candle1"><div class="flame"></div></div>
+                        <div class="candle" id="candle2"><div class="flame"></div></div>
+                        <div class="candle" id="candle3"><div class="flame"></div></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="wish-section">
+                <div class="wish-card">
+                    <h3>Make a wish, my darling!</h3>
+                    <input type="text" id="wishInput" placeholder="Type your birthday wish here...">
+                    <button onclick="blowCandles()" id="blowButton" class="wish-button">
+                        Blow the Candles! 🌬️
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cake-cutting-section" id="cakeCuttingSection" style="display: none;">
+            <div class="cutting-card">
+                <h3>Time to cut the cake!</h3>
+                <button onclick="cutCake()" id="cutCakeButton" class="cut-button">
+                    Cut the Cake! 🔪
+                </button>
+                <div class="cake-slices" id="cakeSlices" style="display: none;">
+                    <div class="slice" id="fafaSlice">
+                        <h4>Fafa's Slice 💜</h4>
+                        <div class="realistic-cake-slice fafa-slice">
+                            <div class="slice-layers">
+                                <div class="slice-layer cake-bottom"></div>
+                                <div class="slice-layer cake-filling"></div>
+                                <div class="slice-layer cake-top"></div>
+                                <div class="slice-frosting"></div>
+                                <div class="slice-decoration">💜</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slice" id="dadaSlice">
+                        <h4>Dada's Slice 💜</h4>
+                        <div class="realistic-cake-slice dada-slice">
+                            <div class="slice-layers">
+                                <div class="slice-layer cake-bottom"></div>
+                                <div class="slice-layer cake-filling"></div>
+                                <div class="slice-layer cake-top"></div>
+                                <div class="slice-frosting"></div>
+                                <div class="slice-decoration">⭐</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hug-section">
+            <div class="hug-card">
+                <button onclick="sendHug()" id="hugButton" class="hug-button">
+                    Send a Virtual Hug to Dada 🤗
+                </button>
+                <div class="hug-animation" id="hugAnimation" style="display: none;">
+                    <div class="hug-hearts">💜💜💜</div>
+                    <p class="hug-message">Hug received. Heart full. Tears falling. 😭💜</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="next-chamber-section">
+            <button onclick="goToMemories()" id="memoriesButton" class="next-button" style="display: none;">
+                Let's Visit Our Memory Wall! 📸
+            </button>
+        </div>
+        
+        <div class="final-message">
+            <h2 class="dancing-script">Ready for our precious memories! 💜</h2>
+            <p>The celebration continues in our memory chamber where all our beautiful moments live forever.</p>
+        </div>
+    </div>
+    
+    <!-- Continuous Effects -->
+    <div class="continuous-hearts-rain" id="heartsRain"></div>
+    <div class="continuous-sparkles-rain" id="sparklesRain"></div>
+
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
