@@ -1,3 +1,3 @@
 # BuddaMummy_B-day
 ## 🔗 Live Demo
-**[View Portfolio](https://arunneelakantam15.github.io/arunneelakantam.github.io/)**
+**[View Portfolio](https://github.com/ArunNeelakantam15/BuddaMummy_B-day)**
